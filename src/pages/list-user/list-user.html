@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Personal Trainer Morone</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home">
+  <ion-list>  
+    <ion-item *ngFor="let user of users">
+      <h2>{{user}}</h2>
+      <!-- <p class="item-description">{{movie.overview}}</p> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

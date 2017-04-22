@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Personal Trainer Morone</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>First Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Last Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CREF Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>UF</ion-label>
+        <ion-select [(ngModel)]="uf" multiple="false" cancelText="Cancel" okText="OK">
+          <ion-option value="SP" selected="true">São Paulo</ion-option>
+          <ion-option value="RJ" selected="true">Rio de Janeiro</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block>Sign In</button>
+  </div>
+
+</ion-content>
