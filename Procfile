@@ -1,1 +1,1 @@
-web: node index.html
+web: ionic serve
